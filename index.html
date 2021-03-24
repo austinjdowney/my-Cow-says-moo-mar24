@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to the Farm</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-primary ">
+        <div class="row ">
+            <div class="col text-center bg-primary text-light p-3"></div>
+            <h1> Welcome to the Farm</h1>
+        </div>
+    </header>
+    <main class="container align-items-center">
+        <div class="row my-3">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" onclick="speak('cow')">COW</button>
+                <button type="button" class="btn btn-secondary" onclick="speak('duck')">DUCK</button>
+                <button type="button" class="btn btn-success" onclick="speak('dog')">DOG</button>
+                <button type="button" class="btn btn-warning" onclick="speak('cat')">CAT</button>
+                <button type="button" class="btn btn-danger" onclick="speak('tim')">TIM</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center" id='buttons'>
+                <h3 id="msg">The ___ says__!</h3>
+                <div id='img'>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+    </footer>
+</body>
+
+</html>
+
+
+<!-- document.querySelector allows you to select css selectors-->
+<!--document.getElementId will do samething and will grab the first one on page that's signified-->
+<!--document.getElementId(or querySelector or even TagName instead of Id). whatever you want to change
+and will adjust whatever you want on your page-->
